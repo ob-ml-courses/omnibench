@@ -1,0 +1,4 @@
+lancedb:
+    DB_PATH: /tmp/chatbot.lance
+    N_PROBES: 20
+    REFINE_FACTOR: 100
