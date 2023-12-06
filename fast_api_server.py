@@ -1,4 +1,12 @@
-import dbs
+"""
+This file contains the FastAPI server that will be used to add and search documents.
+By default, it will wrap the LanceDB database, but you can swap it out for any other database.
+
+To run this server, run the following command:
+uvicorn fast_api_server:app --reload --port 8002
+(reload can be removed)
+"""
+
 from fastapi import FastAPI
 from typing import List
 from pydantic import BaseModel

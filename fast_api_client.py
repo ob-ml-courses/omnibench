@@ -1,3 +1,7 @@
+"""
+Very simple set of examples to show how to use the client.
+"""
+
 if __name__ == "__main__":
     import requests
 
