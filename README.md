@@ -10,11 +10,21 @@ pip install -U outerbounds
 
 # Embedding Server
 
+Before starting the server you need to define a configuration file:
+
+```bash
+export OMNIVECTOR_CONFIG=config.yaml 
+```
+
+See `config.yml` for a simple LanceDB config. See `config_example.yml` for an example of the fields that need to be filled in for other dbs.
+
+Then start the server:
+
 ```bash
 uvicorn fast_api_server:app --port 8002 --reload
 ```
 
-By default this will open a server wrapping on top of LanceDB.
+By default, this will open a server wrapping on top of LanceDB.
 
 Insert, search, and delete data using the following commands:
 
