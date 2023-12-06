@@ -31,7 +31,7 @@ class Index(FlowSpec):
         import numpy as np
         from omnivector.lancedb import LanceDB
 
-        self.n_vectors =  np.random.randn(TOTAL_VECTORS, EMBEDDING_SIZE)
+        self.n_vectors = np.random.randn(TOTAL_VECTORS, EMBEDDING_SIZE)
 
         # normalize the vectors to have unit length using numpy
         self.n_vectors = self.n_vectors/np.linalg.norm(self.n_vectors, axis=1, keepdims=True)
